@@ -10,5 +10,6 @@ class EmailParser
   end
   
   def parse
+    puts @emails
   end
 end
