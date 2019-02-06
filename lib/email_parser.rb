@@ -12,6 +12,6 @@ class EmailParser
   def parse
     arr = @emails.split(" ")
     arr.each { |email| email.chomp!(",") }
-    puts arr
+    arr.uniq
   end
 end
