@@ -10,6 +10,8 @@ class EmailParser
   end
   
   def parse
-    puts @emails
+    arr = @emails.split(" ")
+    arr.each { |email| email.chomp!(",") }
+    puts arr
   end
 end
